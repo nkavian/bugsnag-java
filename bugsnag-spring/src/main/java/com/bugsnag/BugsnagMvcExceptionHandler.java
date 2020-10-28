@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  * Set to highest precedence so that it should be called before other exception
  * resolvers.
  */
-@Order(Ordered.HIGHEST_PRECEDENCE)
+@Order(Ordered.LOWEST_PRECEDENCE)
 class BugsnagMvcExceptionHandler implements HandlerExceptionResolver {
 
     private final Bugsnag bugsnag;
